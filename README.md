@@ -19,8 +19,11 @@ For each measure:
 Hospitals with too few cases for reliable estimates are marked accordingly. This classification framework ensures that results account for variability and are representative of each hospital’s relative performance.
 
 
-# Data Cleaning
-
+# Data Import and Cleaning
+The raw dataset was imported into SQL Server, where initial cleaning steps were taken to ensure data quality. The steps involved:
+- Identifying null values, "Not Applicable," and "Not Available" entries across key columns.
+- Removing rows with null or unavailable values in critical fields like Denominator and Score.
+- Dropping unnecessary columns, such as Footnote and Telephone_Number.
 
 
 
