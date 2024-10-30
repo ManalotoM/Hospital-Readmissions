@@ -25,13 +25,6 @@ Hospitals with too few cases for reliable estimates are marked accordingly. This
 
 
 
-testing
-###Place 1
-
-Hello, this is some text to fill in this, [here](https://stackoverflow.com/questions/27981247/github-markdown-same-page-link), is a link to the second place.
-
-
-
 # Data Source
-For more information on the dataset, please refer to the [CMS dataset documentation](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table).
+For more information on the [dataset](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table), please refer to the [CMS dataset documentation](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table).
 
