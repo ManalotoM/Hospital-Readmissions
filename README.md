@@ -53,5 +53,5 @@ SQL scripts in Analysis.sql were used to perform calculations and aggregations t
 
 
 # Data Source
-For more information on the [dataset](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table), please refer to the [CMS dataset documentation](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table).
+For more information on the [dataset](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table), please refer to the [CMS dataset documentation]([https://data.cms.gov/provider-data/dataset/632h-zaca#data-table](https://data.cms.gov/provider-data/topics/hospitals/unplanned-hospital-visits)).
 
