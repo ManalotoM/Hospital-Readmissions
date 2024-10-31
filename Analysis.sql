@@ -5,10 +5,10 @@ USE HospitalReadmissions;
 SELECT
 	MIN(CAST(Denominator AS INT)) AS Min_Denominator,
 	MAX(CAST(Denominator AS INT)) AS Max_Denominator,
-    AVG(CAST(Denominator AS FLOAT)) AS Avg_Denominator,
-    MIN(CAST(Score AS FLOAT)) AS Min_Score,
-    MAX(CAST(Score AS FLOAT)) AS Max_Score,
-    AVG(CAST(Score AS FLOAT)) AS Avg_Score
+	AVG(CAST(Denominator AS FLOAT)) AS Avg_Denominator,
+	MIN(CAST(Score AS FLOAT)) AS Min_Score,
+	MAX(CAST(Score AS FLOAT)) AS Max_Score,
+	AVG(CAST(Score AS FLOAT)) AS Avg_Score
 FROM HospitalData;
 
 -- Distribution of Performance Compared to National Rate
