@@ -1,12 +1,22 @@
-# Hospital Insights - Readmission and Performance Analysis
-This project analyzes hospital readmissions data with the goal of identifying patterns and insights related to hospital performance. The project focuses on metrics like readmission rates, return days, and unplanned visits to evaluate and compare hospitals, aiming to provide actionable insights that will help healthcare institutions improve patient outcomes.
-
-# Dataset Summary
-This dataset, "Unplanned Hospital Visits: Provider Data," is released by Medicare to analyze provider performance on three primary measures:
+# Project Background
+This project analyzes hospital readmissions data with the goal of identifying patterns and insights related to hospital performance. The project aims to provide actionable insights that will help healthcare institutions improve patient outcomes, focusing on three primary measures:
 1. Excess Days in Acute Care (EDAC), or return days,
 2. Unplanned Readmissions following inpatient admissions, and
 3. Unplanned Visits after outpatient procedures.
 These measures provide insight into hospital quality and patient outcomes without requiring manual reporting from hospitals. Instead, they are calculated using Medicare claims and eligibility data, with data for some conditions (such as COPD, heart attack, heart failure, pneumonia, hip/knee replacement, and others) also sourced from VHA data. This claims-based approach offers comparable accuracy to chart reviews when calculating readmission and hospital visit rates.
+
+An interactive Power BI dashboard can be downloaded [here](https://thetexthubllc-my.sharepoint.com/:u:/g/personal/mark_manaloto_thetexthub_com/EU89TJB1Ky5Nibv5BEbI5IoBwr63kmqy2LvV-8dNzh7FfQ?e=Uade9E).
+
+# Data Structure Overview
+
+# Executive Summary
+
+# Insights Deep Dive
+
+# Recommmendations
+
+
+
 
 Note: Data from the first and second quarters of 2020 is excluded due to the COVID-19 pandemic's impact on hospital services.
 
