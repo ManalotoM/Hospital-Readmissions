@@ -50,6 +50,10 @@ SQL scripts in Analysis.sql were used to perform calculations and aggregations t
 - Average readmission rates by year and state.
 - Analysis of readmission rates by specific conditions.
 
+# Further Investigation topics
+- hospital scores over time
+- cost
+
 
 
 # Data Source
