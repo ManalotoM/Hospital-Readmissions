@@ -7,6 +7,10 @@ These measures provide insight into hospital quality and patient outcomes withou
 
 An interactive Power BI dashboard can be downloaded [here](https://thetexthubllc-my.sharepoint.com/:u:/g/personal/mark_manaloto_thetexthub_com/EU89TJB1Ky5Nibv5BEbI5IoBwr63kmqy2LvV-8dNzh7FfQ?e=Uade9E).
 
+The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](https://github.com/ManalotoM/Hospital-Readmissions/blob/main/Cleaning.sql).
+
+The SQL queries regarding various business questions can be found [here](https://github.com/ManalotoM/Hospital-Readmissions/blob/main/Analysis.sql).
+
 # Data Structure Overview
 
 # Executive Summary
