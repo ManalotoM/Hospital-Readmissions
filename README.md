@@ -1,5 +1,5 @@
 # Hospital Insights - Readmission and Performance Analysis
-This project analyzes hospital readmissions data with the goal of identifying patterns and insights related to hospital performance. The project focuses on metrics like readmission rates, return days, and unplanned visits to evaluate and compare hospitals, aiming to provide actionable insights that could help healthcare institutions improve patient outcomes.
+This project analyzes hospital readmissions data with the goal of identifying patterns and insights related to hospital performance. The project focuses on metrics like readmission rates, return days, and unplanned visits to evaluate and compare hospitals, aiming to provide actionable insights that will help healthcare institutions improve patient outcomes.
 
 # Dataset Summary
 This dataset, "Unplanned Hospital Visits: Provider Data," is released by Medicare to analyze provider performance on three primary measures:
@@ -20,11 +20,21 @@ Hospitals with too few cases for reliable estimates are marked accordingly. This
 
 
 # Data Import and Cleaning
+created tables with defined data types
 The raw dataset was imported into SQL Server, where initial cleaning steps were taken to ensure data quality. The steps involved:
 - Identifying null values, "Not Applicable," and "Not Available" entries across key columns.
 - Removing rows with null or unavailable values in critical fields like Denominator and Score.
 - Dropping unnecessary columns, such as Footnote and Telephone_Number.
 
+In Cleaning.sql, a custom table called MeasureMapping was created to map technical measure IDs to user-friendly names. Each measure, such as "Readmission Rate after Hip/Knee Replacement" or "Heart Failure 30-Day Readmission Rate," was given a readable name to improve the clarity of analysis and visualizations. Additionally, a MeasureGroup field was added to categorize measures into groups Readmissions, Return Days, and Unplanned Visits.
+
+# Data Analysis in SQL
+SQL scripts in Analysis.sql were used to perform calculations and aggregations to extract meaningful insights:
+- Summary statistics (min, max, average) for numerical fields.
+- Distribution of hospital performance against the national rate.
+- Identification of top and bottom performing hospitals based on readmission rates.
+- Average readmission rates by year and state.
+- Analysis of readmission rates by specific conditions.
 
 
 
