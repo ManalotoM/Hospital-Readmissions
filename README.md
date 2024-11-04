@@ -1,4 +1,6 @@
 # Project Background
+Main question this project answers: Which hospital practices or patient conditions contribute most to high readmission scores, and what strategies can reduce these scores to improve patient outcomes and lower costs?
+
 This project analyzes hospital readmissions data with the goal of identifying patterns and insights related to hospital performance. The project aims to provide actionable insights that will help healthcare institutions improve patient outcomes, focusing on three primary measures:
 1. Excess Days in Acute Care (EDAC), or return days,
 2. Unplanned Readmissions following inpatient admissions, and
@@ -10,6 +12,8 @@ An interactive Power BI dashboard can be downloaded [here](https://thetexthubllc
 The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](https://github.com/ManalotoM/Hospital-Readmissions/blob/main/Cleaning.sql).
 
 The SQL queries regarding various business questions can be found [here](https://github.com/ManalotoM/Hospital-Readmissions/blob/main/Analysis.sql).
+
+****the scores are standardized based on national expectations to clarify their purpose in evaluating performance.
 
 # Data Structure Overview
 
