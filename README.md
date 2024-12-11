@@ -5,7 +5,7 @@ This project analyzes hospital readmissions data with the goal of identifying pa
 3. Unplanned Visits after outpatient procedures.
 These measures provide insight into hospital quality and patient outcomes without requiring manual reporting from hospitals. Instead, they are calculated using Medicare claims and eligibility data, with data for some conditions (such as COPD, heart attack, heart failure, pneumonia, hip/knee replacement, and others) also sourced from VHA data. This claims-based approach offers comparable accuracy to chart reviews when calculating readmission and hospital visit rates.
 
-An interactive Power BI dashboard can be downloaded [here](https://thetexthubllc-my.sharepoint.com/:u:/g/personal/mark_manaloto_thetexthub_com/EU89TJB1Ky5Nibv5BEbI5IoBwr63kmqy2LvV-8dNzh7FfQ?e=Uade9E).
+An interactive Power BI dashboard can be downloaded [here]([https://thetexthubllc-my.sharepoint.com/:u:/g/personal/mark_manaloto_thetexthub_com/EU89TJB1Ky5Nibv5BEbI5IoBwr63kmqy2LvV-8dNzh7FfQ?e=Uade9E](https://app.powerbi.com/reportEmbed?reportId=e3c16950-05f5-44e6-9b0d-e5b45fb75b83&autoAuth=true&ctid=84dffbf0-87f4-408c-b699-3873cc88cd2f)).
 
 The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](https://github.com/ManalotoM/Hospital-Readmissions/blob/main/Cleaning.sql).
 
@@ -48,7 +48,7 @@ For each measure:
 - Return days are benchmarked against zero, with hospitals categorized based on whether their result lies above, below, or includes zero.
 Hospitals with too few cases for reliable estimates are marked accordingly. This classification framework ensures that results account for variability and are representative of each hospital’s relative performance.
 
-**Dashboard**
+# Dashboard
 ![Dashboard](images/dashboard.png)
 
 # Data Source
