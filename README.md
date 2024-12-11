@@ -14,8 +14,7 @@ The SQL queries regarding various business questions can be found [here](https:/
 The scores are standardized based on national expectations to clarify their purpose in evaluating performance.
 
 # Data Structure Overview
-
-
+![Schema Diagram](images/readmissions_schema.png)
 
 # Insights Summary
 **Regional Trends**
