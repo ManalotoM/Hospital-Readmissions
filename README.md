@@ -49,7 +49,7 @@ For each measure:
 Hospitals with too few cases for reliable estimates are marked accordingly. This classification framework ensures that results account for variability and are representative of each hospital’s relative performance.
 
 **Dashboard**
-
+![Dashboard](images/dashboard.png)
 
 # Data Source
 For more information on the [dataset](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table), please refer to the [CMS dataset documentation]([https://data.cms.gov/provider-data/dataset/632h-zaca#data-table](https://data.cms.gov/provider-data/topics/hospitals/unplanned-hospital-visits)).
