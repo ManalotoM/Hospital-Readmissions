@@ -28,7 +28,7 @@ In Analysis.sql, the HospitalMeasureScore table was created to summarize perform
 
 # Insights Summary
 **Regional Trends**
-For all measures, the hospitals with the best average performing scores were in the northern and western region, including Utah, Idaho, and Montana. These scores ranged from 4.36 (Utah) to 7.55 (Colorado). The states with the worst performing averages were all in the east coast and the south, with the top worst two being District of Columbia (15.96) and New York (14.50)
+For all measures, the hospitals with the best average performing scores were in the northern and western region, including Utah, Idaho, and Montana. These scores ranged from 4.36 (Utah) to 7.55 (Colorado). The states with the worst performing averages were all in the east coast and the south, with the top worst two being District of Columbia (15.96) and New York (14.50).
 
 **Top and Worst Performers**
 Across all measures, southern states have the best performing hospitals, particularly Texas, Georgia, and Indiana. New York had one top five performer in readmissions and unplanned visits - Hosptial for Special Surgery.
@@ -37,7 +37,9 @@ Unplanned visits had mostly hospitals in midwestern states - Michigan, Iowa, and
 
 # Recommmendations
 **Focus on Low-Performing Regions:** Prioritize interventions in the East Coast and South, especially New York, DC, and Florida, to address systemic challenges with post-discharge care and patient outcomes. Implement region-specific improvement plans, such as enhanced post-discharge follow-up, patient education programs, and investments in infrastructure and staffing.
+
 **Leverage High-Performing States:** Replicate best practices from top states like Utah and Montana by sharing strategies and resources with underperforming hospitals. By adopting proven practices, struggling hospitals can achieve meaningful improvements in their outcomes.
+
 **Specialized Support for New York Hospitals:** Investigate why some New York hospitals, like the Hospital for Special Surgery, outperform others in the same state. Focus on lifting bottom-performing hospitals through tailored strategies, such as leadership support, operational changes, and targeted funding.
 
 **Score Definition and Adjustment**
