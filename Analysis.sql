@@ -67,3 +67,41 @@ ORDER BY Total_Readmissions DESC;
 SELECT State, AVG(Score) AS Avg_Readmission_rate
 FROM HospitalData
 GROUP BY State;
+
+-- Create table to compare measures for each Hospital
+SELECT
+    h.Facility_Name,
+    AVG(CASE WHEN m.MeasureGroup = 'Return Days' THEN h.Score END) AS ReturnDays,
+    AVG(CASE WHEN m.MeasureGroup = 'Unplanned Visits' THEN h.Score END) AS UnplannedVisits,
+    AVG(CASE WHEN m.MeasureGroup = 'Readmissions' THEN h.Score END) AS Readmissions
+INTO HospitalMeasureScore
+FROM
+    HospitalData h
+JOIN 
+    MeasureMapping m ON h.Measure_ID = m.Measure_ID
+GROUP BY 
+    h.Facility_Name;
+
+-- Add new column for average scores
+ALTER TABLE HospitalMeasureScore
+ADD AverageScore DECIMAL;
+
+--UPDATE HospitalMeasureScore
+SET AverageScore = 
+	(COALESCE(ReturnDays, 0) + COALESCE(UnplannedVisits, 0) + COALESCE(Readmissions, 0)) /
+	(CASE WHEN ReturnDays IS NOT NULL THEN 1 ELSE 0 END +
+		CASE WHEN UnplannedVisits IS NOT NULL THEN 1 ELSE 0 END +
+		CASE WHEN Readmissions IS NOT NULL THEN 1 ELSE 0 END)
+WHERE AverageScore IS NULL;
+
+ALTER TABLE HospitalMeasureScore
+ALTER COLUMN AverageScore DECIMAL(18, 10);
+
+UPDATE HospitalMeasureScore
+SET AverageScore = 
+    (COALESCE(ReturnDays, 0) + COALESCE(UnplannedVisits, 0) + COALESCE(Readmissions, 0)) / 
+    (CASE 
+        WHEN ReturnDays IS NOT NULL THEN 1 ELSE 0 END + 
+     CASE WHEN UnplannedVisits IS NOT NULL THEN 1 ELSE 0 END + 
+     CASE WHEN Readmissions IS NOT NULL THEN 1 ELSE 0 END)
+WHERE AverageScore IS NOT NULL;
