@@ -16,6 +16,16 @@ The scores are standardized based on national expectations to clarify their purp
 # Data Structure Overview
 ![Schema Diagram](images/readmissions_schema.png)
 
+# Data Import and Cleaning
+The raw dataset was imported into SQL Server, where initial cleaning steps were taken to ensure data quality. The steps involved:
+- Identifying null values, "Not Applicable," and "Not Available" entries across key columns.
+- Removing rows with null or unavailable values in critical fields like Denominator and Score.
+- Dropping unnecessary columns, such as Footnote and Telephone_Number.
+
+In Cleaning.sql, a custom table called MeasureMapping was created to map technical measure IDs to user-friendly names. Each measure, such as "Readmission Rate after Hip/Knee Replacement" or "Heart Failure 30-Day Readmission Rate," was given a readable name to improve the clarity of analysis and visualizations. Additionally, a MeasureGroup field was added to categorize measures into groups Readmissions, Return Days, and Unplanned Visits.
+
+In Analysis.sql, the HospitalMeasureScore table was created to summarize performance metrics for hospitals by grouping measures like "Return Days," "Unplanned Visits," and "Readmissions." It includes an additional column for the average score, calculated dynamically based on available values for each measure, allowing for a comprehensive comparison across hospitals.
+
 # Insights Summary
 **Regional Trends**
 For all measures, the hospitals with the best average performing scores were in the northern and western region, including Utah, Idaho, and Montana. These scores ranged from 4.36 (Utah) to 7.55 (Colorado). The states with the worst performing averages were all in the east coast and the south, with the top worst two being District of Columbia (15.96) and New York (14.50)
@@ -38,14 +48,8 @@ For each measure:
 - Return days are benchmarked against zero, with hospitals categorized based on whether their result lies above, below, or includes zero.
 Hospitals with too few cases for reliable estimates are marked accordingly. This classification framework ensures that results account for variability and are representative of each hospital’s relative performance.
 
-# Data Import and Cleaning
-created tables with defined data types
-The raw dataset was imported into SQL Server, where initial cleaning steps were taken to ensure data quality. The steps involved:
-- Identifying null values, "Not Applicable," and "Not Available" entries across key columns.
-- Removing rows with null or unavailable values in critical fields like Denominator and Score.
-- Dropping unnecessary columns, such as Footnote and Telephone_Number.
+**Dashboard**
 
-In Cleaning.sql, a custom table called MeasureMapping was created to map technical measure IDs to user-friendly names. Each measure, such as "Readmission Rate after Hip/Knee Replacement" or "Heart Failure 30-Day Readmission Rate," was given a readable name to improve the clarity of analysis and visualizations. Additionally, a MeasureGroup field was added to categorize measures into groups Readmissions, Return Days, and Unplanned Visits.
 
 # Data Source
 For more information on the [dataset](https://data.cms.gov/provider-data/dataset/632h-zaca#data-table), please refer to the [CMS dataset documentation]([https://data.cms.gov/provider-data/dataset/632h-zaca#data-table](https://data.cms.gov/provider-data/topics/hospitals/unplanned-hospital-visits)).
