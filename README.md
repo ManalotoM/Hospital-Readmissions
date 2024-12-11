@@ -42,7 +42,7 @@ Unplanned visits had mostly hospitals in midwestern states - Michigan, Iowa, and
 
 **Specialized Support for New York Hospitals:** Investigate why some New York hospitals, like the Hospital for Special Surgery, outperform others in the same state. Focus on lifting bottom-performing hospitals through tailored strategies, such as leadership support, operational changes, and targeted funding.
 
-**Score Definition and Adjustment**
+# Score Definition and Adjustment
 Each hospital’s Score represents the number of observed events—readmissions, return days, or unplanned visits—attributed to its performance. This score is risk-adjusted to account for patient characteristics such as age, medical history, and comorbidities that may increase readmission likelihood, allowing for fairer comparisons between hospitals.
 
 For each measure:
